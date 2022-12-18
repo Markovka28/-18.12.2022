@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/* Задача 10: Напишите программу, которая 
+принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.*/
+
+Console.Write("Введите трехзначное число: ");
+
+int a = Convert.ToInt32(Console.ReadLine());
+
+if (a>=100 && a <= 1000)
+{                                                           
+    Console.WriteLine($"Цифра {((a / 10) % 10)} вторая между {a/100} и {a % 10} ");
+}
+else if (a<100 || a>=1000)
+Console.WriteLine($"Вы ввели нерелевантное значение");
+
+
+
